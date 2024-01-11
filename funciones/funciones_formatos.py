@@ -21,3 +21,20 @@ def listar_formatos():
         print(f"ID : {formato['id']} ")
         print(f"Nombre del Formato: {formato['nombre']}")
         print("------------------------")
+        
+def validar_formatos():
+    nombre_formato_a_validar = input("Ingrese nombre del formato: ")
+
+    formato_encontrado = None
+
+    for formato in lista_formatos:
+        if formato['nombre'].lower() == nombre_formato_a_validar.lower():
+            formato_encontrado = formato
+            break
+
+    if formato_encontrado is not None:
+        print(f"Formato encontrado:\n{formato_encontrado}")
+        return formato_encontrado
+    else:
+        print("Formato no encontrado.")
+        return None

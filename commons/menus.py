@@ -42,7 +42,7 @@ def menu_formatos():
 def menu_informes():
     limpiar_pantalla()
     print("1 Listar las peliculas de un genero especifico")
-    print("2 Listar las peliculas donde el protagonista sea Silvester Stallone")
+    print("2 Listar las peliculas de un actor especifico")
     print("3 Buscar pelicula y mostrar la sinopsis y los actores")
     print("4 Ir menu Principal")
     op=verificar_opcion("Opcion: ",1,4)

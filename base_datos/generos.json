@@ -1,9 +1,7 @@
 [
   {
-    "GO1": {
-      "id": "GO1",
-      "nombre": "Accion"
-    }
+    "id": "AO1",
+    "nombre": "Accion"
   },
   {
     "id": "AO2",

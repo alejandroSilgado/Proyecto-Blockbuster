@@ -3,7 +3,8 @@ from commons.menus import *
 from funciones.funcion_generos import *
 from funciones.funcion_actores import *
 from funciones.funciones_formatos import *
-
+from funciones.funcion_peliculas import *
+from funciones.funcion_informes import *
 #Arranque del menu generos
 #FUNCIONAL
 
@@ -46,11 +47,39 @@ def formatos():
 def informes():
     limpiar_pantalla()
     op = menu_informes()
-
+    if op == 1:
+        listar_peliculas_por_nombre_genero()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 2:
+        listar_peliculas_por_nombre_actor()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 3:
+        buscar_pelicula_por_nombre()
+        input("Clic cualquier teclas [continuar]: ")
+        
+        
 def peliculas():
     limpiar_pantalla()
     op = menu_peliculas()
-
+    if op == 1:
+        agregar_pelicula()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 2:
+        modificar_pelicula()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 3:
+        eliminar_pelicula()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 4:
+        eliminar_actor()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 5:
+        buscar_pelicula_por_nombre()
+        input("Clic cualquier teclas [continuar]: ")
+    if op == 6:
+        listar_todas_las_peliculas()
+        input("Clic cualquier teclas [continuar]: ")
+        
 # Arranque del menú principal
 while True:
     limpiar_pantalla()

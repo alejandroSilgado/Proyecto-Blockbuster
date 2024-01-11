@@ -21,3 +21,20 @@ def listar_actores():
         print(f"ID : {actor['id']} ")
         print(f"Nombre del Actor: {actor['nombre']}")
         print("------------------------")
+
+def validar_actores():
+    nombre_actor_a_validar = input("Ingrese nombre del actor: ")
+
+    actor_encontrado = None
+
+    for actor in lista_actores:
+        if actor['nombre'].lower() == nombre_actor_a_validar.lower():
+            actor_encontrado = actor
+            break
+
+    if actor_encontrado is not None:
+        print(f"Actor encontrado:\n{actor_encontrado}")
+        return actor_encontrado
+    else:
+        print("Actor no encontrado.")
+        return None
