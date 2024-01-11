@@ -3,7 +3,7 @@ from utilidades.utilidades import *
 
 def menu_principal():
     limpiar_pantalla()
-    print("Bienvenido al sistema de organizacion de BlockBuster")
+    print("----------Bienvenido al sistema de organizacion de BlockBuster---------------")
     print("1 Administrador de Generos")
     print("2 Administrador de Actores")
     print("3 Administrador de Formatos")
